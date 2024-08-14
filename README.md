@@ -12,7 +12,7 @@ This Spring Boot application calculates reward points based on customer transact
 ### Installation
 
 ##Clone the Repository
-   git clone https://github.com/yourusername/rewards-calculator.git
+   git clone https://github.com/Ashishdas/retailer-reward-program.git
 
    cd retailer-reward-program
 
