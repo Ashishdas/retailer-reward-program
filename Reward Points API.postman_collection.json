@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "7295f2c4-c185-4c25-a61e-4bea14323f31",
+		"name": "Reward Points API",
+		"description": "A spring boot application for calculating reward points earned for each customer.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33206131"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/rewards/calculate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"customerId\": \"12345\",\n  \"transactionsByMonth\": {\n    \"January\": {\n      \"month\": \"January\",\n      \"transactions\": [\n        {\"amount\": 120},\n        {\"amount\": 85}\n      ]\n    },\n    \"February\": {\n      \"month\": \"February\",\n      \"transactions\": [\n        {\"amount\": 40},\n        {\"amount\": 75}\n      ]\n    },\n    \"March\": {\n      \"month\": \"March\",\n      \"transactions\": [\n        {\"amount\": 200},\n        {\"amount\": 95}\n      ]\n    }\n  }\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/rewards/calculate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"rewards",
+						"calculate"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
